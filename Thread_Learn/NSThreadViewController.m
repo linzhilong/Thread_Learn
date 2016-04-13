@@ -23,6 +23,8 @@
 - (void)myThreadMainMethod:(id)object {
     NSLog(@"thread:%@", [NSThread currentThread]);
     NSLog(@"object:%@", (NSString *)object);
+    [NSThread  exit];
+    NSLog(@"thread:%@", [NSThread currentThread]);
 }
 
 @end

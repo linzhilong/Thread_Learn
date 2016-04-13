@@ -13,9 +13,30 @@
 @end
 
 @implementation MainTableViewController
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSWillBecomeMultiThreadedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSDidBecomeSingleThreadedNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:NSThreadWillExitNotification object:nil];
+}
+
+- (void)addNotification {
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(becomeMultiThreadNotification:)
+                                                     name:NSWillBecomeMultiThreadedNotification
+                                                   object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(becomeSingleThreadNotification:)
+                                                     name:NSDidBecomeSingleThreadedNotification
+                                                   object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(WillExitNotification:)
+                                                     name:NSThreadWillExitNotification
+                                                   object:nil];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addNotification];
     
     self.mainArrays = [NSMutableArray array];
     [self.mainArrays addObject:@"NSThreadViewController"];
@@ -107,6 +128,19 @@
 {
     UIViewController *sourceViewController = sender.sourceViewController;
     // Pull any data from the view controller which initiated the unwind segue.
+}
+
+#pragma mark - notifications
+- (void)becomeMultiThreadNotification:(NSNotification *)notification {
+    NSLog(@"_cmd:%@;;notification:%@", NSStringFromSelector(_cmd), notification);
+}
+
+- (void)becomeSingleThreadNotification:(NSNotification *)notification {
+    NSLog(@"_cmd:%@;;notification:%@", NSStringFromSelector(_cmd), notification);
+}
+
+- (void)WillExitNotification:(NSNotification *)notification {
+    NSLog(@"_cmd:%@;;notification:%@", NSStringFromSelector(_cmd), notification);
 }
 
 @end

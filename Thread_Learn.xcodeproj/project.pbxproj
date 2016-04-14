@@ -17,6 +17,9 @@
 		D67007641CBE2A4000444F64 /* Thread_LearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007631CBE2A4000444F64 /* Thread_LearnUITests.m */; };
 		D67007731CBE42D200444F64 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007721CBE42D200444F64 /* MainTableViewController.m */; };
 		D67007771CBE47CB00444F64 /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007761CBE47CB00444F64 /* NSThreadViewController.m */; };
+		D670077A1CBF78BC00444F64 /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007791CBF78BC00444F64 /* NSOperationVC.m */; };
+		D670077E1CBF79C900444F64 /* SubThread.m in Sources */ = {isa = PBXBuildFile; fileRef = D670077D1CBF79C900444F64 /* SubThread.m */; };
+		D67007811CBF845700444F64 /* SubOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007801CBF845700444F64 /* SubOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		D67007721CBE42D200444F64 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		D67007751CBE47CB00444F64 /* NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
 		D67007761CBE47CB00444F64 /* NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
+		D67007781CBF78BC00444F64 /* NSOperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationVC.h; sourceTree = "<group>"; };
+		D67007791CBF78BC00444F64 /* NSOperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationVC.m; sourceTree = "<group>"; };
+		D670077C1CBF79C900444F64 /* SubThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubThread.h; sourceTree = "<group>"; };
+		D670077D1CBF79C900444F64 /* SubThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubThread.m; sourceTree = "<group>"; };
+		D670077F1CBF845700444F64 /* SubOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOperation.h; sourceTree = "<group>"; };
+		D67007801CBF845700444F64 /* SubOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,7 @@
 		D670073D1CBE2A4000444F64 /* Thread_Learn */ = {
 			isa = PBXGroup;
 			children = (
+				D670077B1CBF79A300444F64 /* SubClass */,
 				D67007741CBE47AC00444F64 /* VCS */,
 				D67007711CBE42D200444F64 /* MainTableViewController.h */,
 				D67007721CBE42D200444F64 /* MainTableViewController.m */,
@@ -154,8 +164,21 @@
 			children = (
 				D67007751CBE47CB00444F64 /* NSThreadViewController.h */,
 				D67007761CBE47CB00444F64 /* NSThreadViewController.m */,
+				D67007781CBF78BC00444F64 /* NSOperationVC.h */,
+				D67007791CBF78BC00444F64 /* NSOperationVC.m */,
 			);
 			name = VCS;
+			sourceTree = "<group>";
+		};
+		D670077B1CBF79A300444F64 /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				D670077C1CBF79C900444F64 /* SubThread.h */,
+				D670077D1CBF79C900444F64 /* SubThread.m */,
+				D670077F1CBF845700444F64 /* SubOperation.h */,
+				D67007801CBF845700444F64 /* SubOperation.m */,
+			);
+			name = SubClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,10 +312,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D67007731CBE42D200444F64 /* MainTableViewController.m in Sources */,
+				D670077A1CBF78BC00444F64 /* NSOperationVC.m in Sources */,
 				D67007461CBE2A4000444F64 /* ViewController.m in Sources */,
 				D67007431CBE2A4000444F64 /* AppDelegate.m in Sources */,
+				D67007811CBF845700444F64 /* SubOperation.m in Sources */,
 				D67007401CBE2A4000444F64 /* main.m in Sources */,
 				D67007771CBE47CB00444F64 /* NSThreadViewController.m in Sources */,
+				D670077E1CBF79C900444F64 /* SubThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +544,7 @@
 				D670076A1CBE2A4000444F64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D670076B1CBE2A4000444F64 /* Build configuration list for PBXNativeTarget "Thread_LearnTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +553,7 @@
 				D670076D1CBE2A4000444F64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D670076E1CBE2A4000444F64 /* Build configuration list for PBXNativeTarget "Thread_LearnUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +562,7 @@
 				D67007701CBE2A4000444F64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

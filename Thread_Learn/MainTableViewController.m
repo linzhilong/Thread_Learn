@@ -40,6 +40,7 @@
     
     self.mainArrays = [NSMutableArray array];
     [self.mainArrays addObject:@"NSThreadViewController"];
+    [self.mainArrays addObject:@"NSOperationVC"];
 }
 
 - (void)didReceiveMemoryWarning {

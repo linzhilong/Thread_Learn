@@ -1,13 +1,13 @@
 //
-//  NSOperationVC.h
+//  NSBlockOperationVC.h
 //  Thread_Learn
 //
-//  Created by 林志龙 on 16/7/26.
+//  Created by zhilong.lin on 16/4/14.
 //  Copyright © 2016年 zhilong.lin. All rights reserved.
 //
 
 #import "ViewController.h"
 
-@interface NSOperationVC : ViewController
+@interface NSBlockOperationVC : ViewController
 
 @end

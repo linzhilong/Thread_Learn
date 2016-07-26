@@ -25,10 +25,10 @@
 //    [self.thread cancel];
 //    [NSThread detachNewThreadSelector:@selector(myThreadMainMethod:) toTarget:self withObject:@"test"];
     
-    [self performSelector:@selector(check) withObject:self afterDelay:0.f];
-    [self performSelector:@selector(check) withObject:self afterDelay:2.f];
-    [self performSelector:@selector(check) withObject:self afterDelay:3.f];
-    [self performSelector:@selector(check) withObject:self afterDelay:4.f];
+//    [self performSelector:@selector(check) withObject:self afterDelay:0.f];
+//    [self performSelector:@selector(check) withObject:self afterDelay:2.f];
+//    [self performSelector:@selector(check) withObject:self afterDelay:3.f];
+//    [self performSelector:@selector(check) withObject:self afterDelay:4.f];
 }
 
 - (void)check {
@@ -51,13 +51,13 @@
 }
 
 - (void)myThreadMainMethod:(id)object {
-//    [self.thread cancel];
+    [self.thread cancel];
     
-    NSInteger count = 0;
-    for (NSInteger index = 0; index < 1000000000; index ++) {
-        count ++;
-    }
-    
+//    NSInteger count = 0;
+//    for (NSInteger index = 0; index < 1000000000; index ++) {
+//        count ++;
+//    }
+    NSLog(@"ismain:%@", [NSThread isMainThread] ? @"yes" : @"no");
     NSLog(@"ismultithread:%@", [NSThread isMultiThreaded] ? @"yes" : @"no");
     [NSThread sleepForTimeInterval:2.f];
     

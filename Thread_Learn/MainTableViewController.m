@@ -40,7 +40,27 @@
     
     self.mainArrays = [NSMutableArray array];
     [self.mainArrays addObject:@"NSThreadViewController"];
+    [self.mainArrays addObject:@"NSBlockOperationVC"];
     [self.mainArrays addObject:@"NSOperationVC"];
+    
+    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^(){
+        NSLog(@"执行第1次操作，线程：%@", [NSThread currentThread]);
+    }];
+    
+    [operation addExecutionBlock:^() {
+        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
+    }];
+    
+    [operation addExecutionBlock:^() {
+        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
+    }];
+    
+    [operation addExecutionBlock:^() {
+        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
+    }];  
+    
+    // 开始执行任务  
+    [operation start];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -11,7 +11,7 @@
 @implementation SubThread
 
 - (void)main {
-//    [super main];
+    [super main];
     
     self.name = @"thread-1";
     [self setQualityOfService:NSQualityOfServiceUtility];

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADDE22541D47AF50003430D4 /* SubOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE22531D47AF50003430D4 /* SubOperation.m */; };
+		ADDE22571D47AF92003430D4 /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE22561D47AF92003430D4 /* NSOperationVC.m */; };
 		D67007401CBE2A4000444F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D670073F1CBE2A4000444F64 /* main.m */; };
 		D67007431CBE2A4000444F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007421CBE2A4000444F64 /* AppDelegate.m */; };
 		D67007461CBE2A4000444F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007451CBE2A4000444F64 /* ViewController.m */; };
@@ -17,9 +19,9 @@
 		D67007641CBE2A4000444F64 /* Thread_LearnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007631CBE2A4000444F64 /* Thread_LearnUITests.m */; };
 		D67007731CBE42D200444F64 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007721CBE42D200444F64 /* MainTableViewController.m */; };
 		D67007771CBE47CB00444F64 /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007761CBE47CB00444F64 /* NSThreadViewController.m */; };
-		D670077A1CBF78BC00444F64 /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007791CBF78BC00444F64 /* NSOperationVC.m */; };
+		D670077A1CBF78BC00444F64 /* NSBlockOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007791CBF78BC00444F64 /* NSBlockOperationVC.m */; };
 		D670077E1CBF79C900444F64 /* SubThread.m in Sources */ = {isa = PBXBuildFile; fileRef = D670077D1CBF79C900444F64 /* SubThread.m */; };
-		D67007811CBF845700444F64 /* SubOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007801CBF845700444F64 /* SubOperation.m */; };
+		D67007811CBF845700444F64 /* SubBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007801CBF845700444F64 /* SubBlockOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADDE22521D47AF50003430D4 /* SubOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOperation.h; sourceTree = "<group>"; };
+		ADDE22531D47AF50003430D4 /* SubOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOperation.m; sourceTree = "<group>"; };
+		ADDE22551D47AF92003430D4 /* NSOperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationVC.h; sourceTree = "<group>"; };
+		ADDE22561D47AF92003430D4 /* NSOperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationVC.m; sourceTree = "<group>"; };
 		D670073B1CBE2A4000444F64 /* Thread_Learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thread_Learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D670073F1CBE2A4000444F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D67007411CBE2A4000444F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,12 +66,12 @@
 		D67007721CBE42D200444F64 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		D67007751CBE47CB00444F64 /* NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
 		D67007761CBE47CB00444F64 /* NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
-		D67007781CBF78BC00444F64 /* NSOperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationVC.h; sourceTree = "<group>"; };
-		D67007791CBF78BC00444F64 /* NSOperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationVC.m; sourceTree = "<group>"; };
+		D67007781CBF78BC00444F64 /* NSBlockOperationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSBlockOperationVC.h; sourceTree = "<group>"; };
+		D67007791CBF78BC00444F64 /* NSBlockOperationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSBlockOperationVC.m; sourceTree = "<group>"; };
 		D670077C1CBF79C900444F64 /* SubThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubThread.h; sourceTree = "<group>"; };
 		D670077D1CBF79C900444F64 /* SubThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubThread.m; sourceTree = "<group>"; };
-		D670077F1CBF845700444F64 /* SubOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubOperation.h; sourceTree = "<group>"; };
-		D67007801CBF845700444F64 /* SubOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubOperation.m; sourceTree = "<group>"; };
+		D670077F1CBF845700444F64 /* SubBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubBlockOperation.h; sourceTree = "<group>"; };
+		D67007801CBF845700444F64 /* SubBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubBlockOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +170,10 @@
 			children = (
 				D67007751CBE47CB00444F64 /* NSThreadViewController.h */,
 				D67007761CBE47CB00444F64 /* NSThreadViewController.m */,
-				D67007781CBF78BC00444F64 /* NSOperationVC.h */,
-				D67007791CBF78BC00444F64 /* NSOperationVC.m */,
+				D67007781CBF78BC00444F64 /* NSBlockOperationVC.h */,
+				D67007791CBF78BC00444F64 /* NSBlockOperationVC.m */,
+				ADDE22551D47AF92003430D4 /* NSOperationVC.h */,
+				ADDE22561D47AF92003430D4 /* NSOperationVC.m */,
 			);
 			name = VCS;
 			sourceTree = "<group>";
@@ -175,8 +183,10 @@
 			children = (
 				D670077C1CBF79C900444F64 /* SubThread.h */,
 				D670077D1CBF79C900444F64 /* SubThread.m */,
-				D670077F1CBF845700444F64 /* SubOperation.h */,
-				D67007801CBF845700444F64 /* SubOperation.m */,
+				D670077F1CBF845700444F64 /* SubBlockOperation.h */,
+				D67007801CBF845700444F64 /* SubBlockOperation.m */,
+				ADDE22521D47AF50003430D4 /* SubOperation.h */,
+				ADDE22531D47AF50003430D4 /* SubOperation.m */,
 			);
 			name = SubClass;
 			sourceTree = "<group>";
@@ -312,13 +322,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D67007731CBE42D200444F64 /* MainTableViewController.m in Sources */,
-				D670077A1CBF78BC00444F64 /* NSOperationVC.m in Sources */,
+				D670077A1CBF78BC00444F64 /* NSBlockOperationVC.m in Sources */,
 				D67007461CBE2A4000444F64 /* ViewController.m in Sources */,
+				ADDE22571D47AF92003430D4 /* NSOperationVC.m in Sources */,
 				D67007431CBE2A4000444F64 /* AppDelegate.m in Sources */,
-				D67007811CBF845700444F64 /* SubOperation.m in Sources */,
+				D67007811CBF845700444F64 /* SubBlockOperation.m in Sources */,
 				D67007401CBE2A4000444F64 /* main.m in Sources */,
 				D67007771CBE47CB00444F64 /* NSThreadViewController.m in Sources */,
 				D670077E1CBF79C900444F64 /* SubThread.m in Sources */,
+				ADDE22541D47AF50003430D4 /* SubOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

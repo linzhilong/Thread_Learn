@@ -42,6 +42,8 @@
     [self.mainArrays addObject:@"NSThreadViewController"];
     [self.mainArrays addObject:@"NSBlockOperationVC"];
     [self.mainArrays addObject:@"NSOperationVC"];
+    [self.mainArrays addObject:@"GCDVC"];
+    [self.mainArrays addObject:@"GCDTargetQueueVC"];
     
 //    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^(){
 //        NSLog(@"执行第1次操作，线程：%@", [NSThread currentThread]);

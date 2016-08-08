@@ -20,18 +20,18 @@
 }
 
 - (void)addNotification {
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(becomeMultiThreadNotification:)
-                                                     name:NSWillBecomeMultiThreadedNotification
-                                                   object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(becomeSingleThreadNotification:)
-                                                     name:NSDidBecomeSingleThreadedNotification
-                                                   object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(WillExitNotification:)
-                                                     name:NSThreadWillExitNotification
-                                                   object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(becomeMultiThreadNotification:)
+//                                                     name:NSWillBecomeMultiThreadedNotification
+//                                                   object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(becomeSingleThreadNotification:)
+//                                                     name:NSDidBecomeSingleThreadedNotification
+//                                                   object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self
+//                                                 selector:@selector(WillExitNotification:)
+//                                                     name:NSThreadWillExitNotification
+//                                                   object:nil];
 }
 
 - (void)viewDidLoad {
@@ -43,24 +43,24 @@
     [self.mainArrays addObject:@"NSBlockOperationVC"];
     [self.mainArrays addObject:@"NSOperationVC"];
     
-    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^(){
-        NSLog(@"执行第1次操作，线程：%@", [NSThread currentThread]);
-    }];
-    
-    [operation addExecutionBlock:^() {
-        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
-    }];
-    
-    [operation addExecutionBlock:^() {
-        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
-    }];
-    
-    [operation addExecutionBlock:^() {
-        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
-    }];  
-    
-    // 开始执行任务  
-    [operation start];
+//    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^(){
+//        NSLog(@"执行第1次操作，线程：%@", [NSThread currentThread]);
+//    }];
+//    
+//    [operation addExecutionBlock:^() {
+//        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
+//    }];
+//    
+//    [operation addExecutionBlock:^() {
+//        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
+//    }];
+//    
+//    [operation addExecutionBlock:^() {
+//        NSLog(@"又执行了1个新的操作，线程：%@", [NSThread currentThread]);
+//    }];  
+//    
+//    // 开始执行任务  
+//    [operation start];
 }
 
 - (void)didReceiveMemoryWarning {

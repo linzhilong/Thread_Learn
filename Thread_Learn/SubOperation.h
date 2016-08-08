@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface SubOperation : NSOperation
-
+- (instancetype)initWithIndex:(NSString *)indexStr;
+@property (nonatomic, copy) NSString *indexStr;
 @end

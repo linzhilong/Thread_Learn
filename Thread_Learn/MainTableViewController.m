@@ -44,6 +44,10 @@
     [self.mainArrays addObject:@"NSOperationVC"];
     [self.mainArrays addObject:@"GCDVC"];
     [self.mainArrays addObject:@"GCDTargetQueueVC"];
+    [self.mainArrays addObject:@"GCDGroupVC"];
+    [self.mainArrays addObject:@"GCDObjectsVC"];
+    [self.mainArrays addObject:@"GCDSemaphoresVC"];
+    [self.mainArrays addObject:@"GCDBarriersVC"];
     
 //    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^(){
 //        NSLog(@"执行第1次操作，线程：%@", [NSThread currentThread]);

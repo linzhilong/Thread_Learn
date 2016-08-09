@@ -22,10 +22,21 @@
         NSArray *house2Folks = @[@"Irma", @"Irene", @"Ian"];
         
         dispatch_queue_t house1Queue = dispatch_queue_create("house 1", DISPATCH_QUEUE_CONCURRENT);
+        dispatch_queue_t house2Queue = dispatch_queue_create("house 2", DISPATCH_QUEUE_CONCURRENT);
+        
+        // Set the target queue for BOTH house queues
+        dispatch_queue_t partyLine = dispatch_queue_create("party line", DISPATCH_QUEUE_SERIAL);
+        dispatch_set_target_queue(house1Queue, partyLine);
+        dispatch_set_target_queue(house2Queue, partyLine);
         
         for (NSString *caller in house1Folks) {
             dispatch_async(house1Queue, ^{
                 makeCall(house1Queue, caller, house2Folks);
+            });
+        }
+        for (NSString *caller in house2Folks) {
+            dispatch_async(house2Queue, ^{
+                makeCall(house2Queue, caller, house1Folks);
             });
         }
     }

@@ -11,6 +11,11 @@
 		ADDE22571D47AF92003430D4 /* NSOperationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE22561D47AF92003430D4 /* NSOperationVC.m */; };
 		ADEE9D8C1D5246740081552F /* GCDVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEE9D8B1D5246740081552F /* GCDVC.m */; };
 		D66DF7EC1D5874E700785E8D /* GCDTargetQueueVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DF7EB1D5874E700785E8D /* GCDTargetQueueVC.m */; };
+		D66DF7EF1D59B2A500785E8D /* GCDGroupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DF7EE1D59B2A500785E8D /* GCDGroupVC.m */; };
+		D66DF7F21D59BABD00785E8D /* GCDObjectsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DF7F11D59BABD00785E8D /* GCDObjectsVC.m */; };
+		D66DF7F51D59C17400785E8D /* GCDSemaphoresVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DF7F41D59C17400785E8D /* GCDSemaphoresVC.m */; };
+		D66DF7F81D59C6E700785E8D /* GCDBarriersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DF7F71D59C6E700785E8D /* GCDBarriersVC.m */; };
+		D66DF7FB1D59C96500785E8D /* GCDSourcesVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D66DF7FA1D59C96500785E8D /* GCDSourcesVC.m */; };
 		D67007401CBE2A4000444F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D670073F1CBE2A4000444F64 /* main.m */; };
 		D67007431CBE2A4000444F64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007421CBE2A4000444F64 /* AppDelegate.m */; };
 		D67007461CBE2A4000444F64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D67007451CBE2A4000444F64 /* ViewController.m */; };
@@ -52,6 +57,16 @@
 		ADEE9D8B1D5246740081552F /* GCDVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC.m; sourceTree = "<group>"; };
 		D66DF7EA1D5874E700785E8D /* GCDTargetQueueVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTargetQueueVC.h; sourceTree = "<group>"; };
 		D66DF7EB1D5874E700785E8D /* GCDTargetQueueVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTargetQueueVC.m; sourceTree = "<group>"; };
+		D66DF7ED1D59B2A500785E8D /* GCDGroupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroupVC.h; sourceTree = "<group>"; };
+		D66DF7EE1D59B2A500785E8D /* GCDGroupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroupVC.m; sourceTree = "<group>"; };
+		D66DF7F01D59BABD00785E8D /* GCDObjectsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDObjectsVC.h; sourceTree = "<group>"; };
+		D66DF7F11D59BABD00785E8D /* GCDObjectsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDObjectsVC.m; sourceTree = "<group>"; };
+		D66DF7F31D59C17400785E8D /* GCDSemaphoresVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphoresVC.h; sourceTree = "<group>"; };
+		D66DF7F41D59C17400785E8D /* GCDSemaphoresVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphoresVC.m; sourceTree = "<group>"; };
+		D66DF7F61D59C6E700785E8D /* GCDBarriersVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDBarriersVC.h; sourceTree = "<group>"; };
+		D66DF7F71D59C6E700785E8D /* GCDBarriersVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDBarriersVC.m; sourceTree = "<group>"; };
+		D66DF7F91D59C96500785E8D /* GCDSourcesVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSourcesVC.h; sourceTree = "<group>"; };
+		D66DF7FA1D59C96500785E8D /* GCDSourcesVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSourcesVC.m; sourceTree = "<group>"; };
 		D670073B1CBE2A4000444F64 /* Thread_Learn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thread_Learn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D670073F1CBE2A4000444F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D67007411CBE2A4000444F64 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -184,6 +199,16 @@
 				ADEE9D8B1D5246740081552F /* GCDVC.m */,
 				D66DF7EA1D5874E700785E8D /* GCDTargetQueueVC.h */,
 				D66DF7EB1D5874E700785E8D /* GCDTargetQueueVC.m */,
+				D66DF7ED1D59B2A500785E8D /* GCDGroupVC.h */,
+				D66DF7EE1D59B2A500785E8D /* GCDGroupVC.m */,
+				D66DF7F01D59BABD00785E8D /* GCDObjectsVC.h */,
+				D66DF7F11D59BABD00785E8D /* GCDObjectsVC.m */,
+				D66DF7F31D59C17400785E8D /* GCDSemaphoresVC.h */,
+				D66DF7F41D59C17400785E8D /* GCDSemaphoresVC.m */,
+				D66DF7F61D59C6E700785E8D /* GCDBarriersVC.h */,
+				D66DF7F71D59C6E700785E8D /* GCDBarriersVC.m */,
+				D66DF7F91D59C96500785E8D /* GCDSourcesVC.h */,
+				D66DF7FA1D59C96500785E8D /* GCDSourcesVC.m */,
 			);
 			name = VCS;
 			sourceTree = "<group>";
@@ -341,8 +366,13 @@
 				D67007811CBF845700444F64 /* SubBlockOperation.m in Sources */,
 				D67007401CBE2A4000444F64 /* main.m in Sources */,
 				D67007771CBE47CB00444F64 /* NSThreadViewController.m in Sources */,
+				D66DF7F21D59BABD00785E8D /* GCDObjectsVC.m in Sources */,
+				D66DF7F81D59C6E700785E8D /* GCDBarriersVC.m in Sources */,
 				D670077E1CBF79C900444F64 /* SubThread.m in Sources */,
+				D66DF7F51D59C17400785E8D /* GCDSemaphoresVC.m in Sources */,
+				D66DF7EF1D59B2A500785E8D /* GCDGroupVC.m in Sources */,
 				ADDE22541D47AF50003430D4 /* SubOperation.m in Sources */,
+				D66DF7FB1D59C96500785E8D /* GCDSourcesVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
